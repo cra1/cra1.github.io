@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jsolo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+
+    body {
+     background: linear-gradient(135deg, #0f2922 0%, #1a3f36 100%);
+      color: #e8f5e9;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      max-width: 380px;
+      padding: 20px;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #e8f5e9;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin: 10px 0;
+      color: #e8f5e9;
+    }
+    p {
+      color: #a7c9b0;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+    .latest-release {
+      background: rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 16px;
+      margin: 30px 0;
+      backdrop-filter: blur(10px);
+    }
+    .cover {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+    .release-title {
+      margin: 12px 0 4px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .btn {
+      background: #e8f5e9;
+      color: #0f2922;
+      padding: 16px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    .btn.spotify { background: #1DB954; color: white; }
+    .btn.youtube { background: #FF0000; color: white; }
+    .btn.instagram { background: #E4405F; color: white; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo.png" alt="Jsolo" class="avatar">
+
+    <!-- <h1>Jsolo</h1> -->
+    <p>Hip-hop and R&B from Stockholm, Sweden</p>
+
+    <!-- Latest Release Section -->
+    <div class="latest-release">
+      <p style="margin:0 0 8px; opacity:0.9;">Latest Single</p>
+      <img src="latest.jpg" alt="Latest release cover" class="cover">
+      <div class="release-title">Ridin</div>
+      <div style="color:#a7c9b0; font-size:14px;">Out Now!</div>
+    </div>
+
+    <!-- Links -->
+    <div class="links">
+      <a href="https://open.spotify.com/artist/4NBFYaOFB6vR2BSd69JVCi" target="_blank" class="btn spotify">
+        <i class="fab fa-spotify"></i> Listen on Spotify
+      </a>
+      <a href="https://www.youtube.com/@JeromeDaSilva-j1p/shorts" target="_blank" class="btn youtube">
+        <i class="fab fa-youtube"></i> Watch on YouTube
+      </a>
+      <a href="https://www.instagram.com/daddy_moany_chronicles" target="_blank" class="btn instagram">
+        <i class="fab fa-instagram"></i> Follow on Instagram
+      </a>
+    </div>
+
+    <p style="margin-top:50px; font-size:12px; opacity:0.6;">
+      © 2025 Jsolo • All rights reserved
+    </p>
+  </div>
+
+</body>
+</html>
